@@ -8,7 +8,7 @@ This project provides a PCB that communicates with **ESPHome** to send a notific
 
 **Do not work on the Twinbus PCB when it is connected, it is a very fragile system which might break when there is a short.**
 
-This project works reliably even without a custom pcb. The most important thing is the seperate power supply for the ESP8266 and that the grounds of both pcbs are always connected.
+This project works reliably even without a custom PCB. The most important thing is the seperate power supply for the ESP8266 and that the grounds of both PCBs are always connected.
 Other than soldering to the original PCB there are no other changes made. It still works the same way.
 The System will trigger on both the front doorbell as well as the apartment doorbell as there is no differentiation.
 If you want to mount the PCB without damaging the original casing you can mount it with pressure sensitive tape.
