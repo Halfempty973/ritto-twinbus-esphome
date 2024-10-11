@@ -1,0 +1,58 @@
+esphome:
+  name: doorlock
+  friendly_name: doorlock
+  platform: ESP8266
+  board: nodemcuv2
+
+# WLAN-Configuration (fill out)
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Optional: static IP-Adress, if desired
+  # manual_ip:
+  #   static_ip: 192.168.x.x
+  #   gateway: 192.168.x.1
+  #   subnet: 255.255.255.0
+
+# Enable Home Assistant API
+#api:
+#  encryption:
+#    key: "API_KEY"
+
+
+# Optional: OTA for Wifi updates
+#ota:
+ # - platform: esphome
+  #  password: "OTA_PASSWORD"
+
+# Enable logging
+logger:
+
+# GPIO Input for the Doorbell Signal (Pin D5)
+binary_sensor:
+  - platform: gpio
+    pin: D5
+    name: "doorbell_signal"
+    id: klingel
+    on_press:
+      - delay: 2s
+      - switch.turn_on: doorlock_output
+      - switch.turn_on: door_open
+      - delay: 2s
+      - switch.turn_off: doorlock_output
+      - switch.turn_off: door_open
+
+# GPIO Output for the Doorlock Transistor (Pin D6)
+switch:
+  - platform: gpio
+    pin: D6
+    id: doorlock_output
+    name: "Doorlock Output"
+    inverted: false
+    
+  - platform: template
+    name: "Door open"
+    id: door_open
+    optimistic: true
+    restore_mode: "RESTORE_DEFAULT_ON"
