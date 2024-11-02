@@ -1,8 +1,0 @@
-﻿ID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Supplier Part	Price
-"1"	"HDR-F-2.54_1x2"	"J5,J4"	"HDR-F-2.54_1X2"	"2"	""	""	"LCSC"	"C49661"	"0.036"
-"2"	"NODE_MCU_ESP8266"	"NODEMCUV3"	"NODEMCU-12E; NODEMCU-ESP8266"	"1"	""	""	""	""	""
-"3"	"2N2222"	"Q1"	"TO-92-3_L4.9-W3.7-P1.27-L"	"1"	"2N2222A"	"ST(先科)"	"LCSC"	"C118536"	"0.022"
-"4"	"10K"	"R1,R2,R3"	"10K-R-THT-FP"	"3"	"MF1/4W-330Ω±1% T"	"CCO(千志电子)"	"LCSC"	"C119313"	"0.01"
-"5"	"HDR-M-2.54_1x6"	"J1"	"HDR-M-2.54_1X6"	"1"	""	""	"LCSC"	"C190819"	"0.03"
-"6"	"HDR-M-2.54_1x2"	"J2"	"HDR-M-2.54_1X2"	"1"	""	""	"LCSC"	"C124375"	"0.023"
-"7"	"HDR-M-2.54_1x10"	"J3"	"HDR-M-2.54_1X10"	"1"	""	""	"LCSC"	"C57369"	"0.043"
