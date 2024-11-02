@@ -13,8 +13,7 @@ Other than soldering to the original PCB there are no other changes made. It sti
 The system will trigger on both the front doorbell as well as the apartment doorbell as there is no differentiation.
 If you want to mount the PCB without damaging the original casing you can mount it with pressure sensitive tape.
 
-![PCB Front](https://github.com/user-attachments/assets/bc4f5a12-e06e-4cfc-ab80-2fbcd491545e)
-
+![PCB Front](https://github.com/user-attachments/assets/15a7c113-f38f-4eb2-9b5c-b63e467d6a46)
 
 ## Power Considerations
 
