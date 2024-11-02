@@ -13,11 +13,16 @@ Other than soldering to the original PCB there are no other changes made. It sti
 The system will trigger on both the front doorbell as well as the apartment doorbell as there is no differentiation.
 If you want to mount the PCB without damaging the original casing you can mount it with pressure sensitive tape.
 
+![PCB Front](https://github.com/user-attachments/assets/bc4f5a12-e06e-4cfc-ab80-2fbcd491545e)
+
+
 ## Power Considerations
 
 Due to the fragile nature of the **Twinbus** system, it's not possible to power the PCB directly from the Twinbus itself. Doing so would render your entire door panel inoperative as long as the PCB is connected. To avoid this, the PCB utilizes a **voltage divider** to reduce the 5V doorbell signal to 3.3V, making it compatible with the **ESP8266** input.
 
 A voltage divider works effectively because it draws almost no power from its source. While we used **10kΩ resistors** for testing, other higher-value resistors may also work. For example, we tested **11kΩ resistors** with no noticeable difference.
+
+**Both the PCB of the ESP8266 and the Twinbus PCB need to share a common ground in order to work. The newer version has two ground pads for this reason**
 
 The following Voltages are present at the original "Wohntelefon 7360"
 - 5V while ringing the doorbell
