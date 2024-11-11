@@ -31,6 +31,14 @@ The following Voltages are present at the original "Wohntelefon 7360"
 
 To minimize interference with the original PCB, an **NPN transistor** is used to trigger the door lock signal. While you may be able to use different NPN transistors, we have successfully tested this with the **2N2222**.
 
+## Connecting the PCB's together
+
+**With the PCB** 
+![Twinbus connection](https://github.com/user-attachments/assets/7987326f-47fe-472d-a21e-35f601020112)
+
+
+**With bare components**
+![Twinbus connection bare components](https://github.com/user-attachments/assets/d5570494-d16b-4003-af8b-8ac0599c8a1c)
 
 
 ## Documents:
