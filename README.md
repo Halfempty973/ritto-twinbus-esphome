@@ -40,12 +40,22 @@ The picture shows the needed pads of the Wohntelefon 7630
 
 ## Connecting the PCB's together
 
+When ringing the bell, the Signal pin (middle pad from the top row) gets pulled to 5V. This needs to be connected to Bell Sig pad of the PCB.
+
+To be able to open the doorlock with the ESP8266 the DO (TO) Pin needs to be connected as shown in the picture. When the third pin from the left on the bottom row gets pulled to ground it will activate the lock. 
+
+The fourth pin from the left on the bottom row is used as the ground pin to activate the doorlock. This needs to be connected to the GND (Twinbus). (You can also use the left pin of the upper row as a GND) 
+
+To power the ESP8266 you can use any voltage between 4.5V and 10V at least with the original NodeMCU's. That voltage can be applied to the VIN pin and the Ground of the power supply has its own pin at GND (PSU).
+
 **With the PCB** 
 ![Twinbus connection](https://github.com/user-attachments/assets/7987326f-47fe-472d-a21e-35f601020112)
 
-
 **With bare components**
+
+**It is important for the bare components, that the GND of the ESP8266 is connected to both the GND of the Twinbus PCB as well as the GND of the Voltage Divider, otherwise it wont work**
 ![Twinbus connection bare components](https://github.com/user-attachments/assets/d5570494-d16b-4003-af8b-8ac0599c8a1c)
+
 
 
 ## Documents:
