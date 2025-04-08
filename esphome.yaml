@@ -35,7 +35,7 @@ binary_sensor:
     pin: D5
     name: "doorbell_signal"
     id: klingel
-    on_press:
+    on_press: # This automatically opens the door to the main entrance of the building. You can leave it out, however my friend wanted it as he had overheard the bell a few times. The delay is to not make it obvious that it automatically opens the door
       - delay: 2s
       - switch.turn_on: doorlock_output
       - switch.turn_on: door_open
